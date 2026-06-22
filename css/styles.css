@@ -1,0 +1,795 @@
+/* =====================================================
+   VARIABLES GENERALES DEL SITIO
+===================================================== */
+
+:root {
+  --bg: #06101f;
+  --bg-soft: #0c1728;
+  --bg-card: rgba(255, 255, 255, 0.075);
+
+  --text: #f6f8ff;
+  --muted: #aeb9cc;
+
+  --border: rgba(255, 255, 255, 0.14);
+  --shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+
+  --cyan: #28e0d3;
+  --blue: #3498ff;
+  --purple: #a66cff;
+  --orange: #ff9d3d;
+  --green: #66dd66;
+  --pink: #ff66c4;
+
+  --radius-lg: 26px;
+  --radius-md: 18px;
+  --radius-sm: 12px;
+
+  --max-width: 1400px;
+}
+
+/* Modo claro */
+body.light {
+  --bg: #f4f7fb;
+  --bg-soft: #ffffff;
+  --bg-card: rgba(255, 255, 255, 0.85);
+
+  --text: #101827;
+  --muted: #556070;
+
+  --border: rgba(15, 23, 42, 0.14);
+  --shadow: 0 20px 60px rgba(15, 23, 42, 0.12);
+}
+
+/* =====================================================
+   RESET GENERAL
+===================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  line-height: 1.65;
+  background:
+    radial-gradient(circle at 85% 8%, rgba(52, 152, 255, 0.20), transparent 28%),
+    radial-gradient(circle at 10% 5%, rgba(40, 224, 211, 0.14), transparent 25%),
+    radial-gradient(circle at 50% 45%, rgba(166, 108, 255, 0.10), transparent 32%),
+    var(--bg);
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.35;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+  background-size: 52px 52px;
+  mask-image: linear-gradient(to bottom, black, transparent 75%);
+}
+
+::selection {
+  background: var(--cyan);
+  color: #06101f;
+}
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 16px 7%;
+
+  background: rgba(6, 16, 31, 0.82);
+  backdrop-filter: blur(18px);
+
+  border-bottom: 1px solid var(--border);
+}
+
+body.light .navbar {
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-icon {
+  width: 42px;
+  height: 42px;
+
+  display: grid;
+  place-items: center;
+
+  font-size: 28px;
+  color: var(--cyan);
+
+  border-radius: 14px;
+  background: rgba(40, 224, 211, 0.10);
+  border: 1px solid rgba(40, 224, 211, 0.25);
+}
+
+.brand strong {
+  display: block;
+  font-size: 17px;
+  letter-spacing: 0.2px;
+}
+
+.brand small {
+  display: block;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+
+  padding: 9px 13px;
+  border-radius: 999px;
+
+  transition: 0.25s ease;
+}
+
+.nav-links a:hover {
+  color: #06101f;
+  background: var(--cyan);
+}
+
+.theme-btn {
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text);
+
+  min-width: 45px;
+  height: 38px;
+
+  border-radius: 999px;
+
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.theme-btn:hover {
+  transform: translateY(-2px);
+  border-color: var(--cyan);
+}
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+  min-height: 85vh;
+
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 54px;
+  align-items: center;
+
+  width: min(100%, var(--max-width));
+  margin: 0 auto;
+  padding: 95px 7% 80px;
+}
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  color: var(--cyan);
+  font-weight: 800;
+  letter-spacing: 0.3px;
+
+  margin-bottom: 18px;
+  padding: 8px 13px;
+
+  background: rgba(40, 224, 211, 0.10);
+  border: 1px solid rgba(40, 224, 211, 0.20);
+  border-radius: 999px;
+}
+
+.label::before {
+  content: "●";
+  font-size: 10px;
+}
+
+.hero h1 {
+  font-size: clamp(42px, 7vw, 82px);
+  line-height: 0.96;
+  letter-spacing: -2px;
+
+  margin-bottom: 24px;
+
+  background: linear-gradient(135deg, #ffffff, #d5e7ff 45%, var(--cyan));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+body.light .hero h1 {
+  background: linear-gradient(135deg, #101827, #345b86 45%, #00a99d);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero p {
+  color: var(--muted);
+  font-size: 18px;
+  max-width: 720px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+/* =====================================================
+   BOTONES
+===================================================== */
+
+.btn,
+.week-card button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  border: none;
+
+  padding: 12px 18px;
+  border-radius: 999px;
+
+  font-weight: 800;
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+.primary,
+.week-card button {
+  background: linear-gradient(135deg, var(--cyan), #7cf5e8);
+  color: #031018;
+  box-shadow: 0 12px 30px rgba(40, 224, 211, 0.22);
+}
+
+.secondary {
+  background: var(--bg-card);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.btn:hover,
+.week-card button:hover {
+  transform: translateY(-3px);
+}
+
+/* =====================================================
+   TARJETA DE CÓDIGO
+===================================================== */
+
+.hero-visual {
+  position: relative;
+}
+
+.code-card {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.10), rgba(255,255,255,0.04));
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 22px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.code-card::before {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  right: 7%;
+  top: 15%;
+  background: rgba(40, 224, 211, 0.18);
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+.code-dots {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.code-dots span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.code-dots span:nth-child(1) { background: #ff5f57; }
+.code-dots span:nth-child(2) { background: #ffbd2e; }
+.code-dots span:nth-child(3) { background: #28c840; }
+
+pre {
+  overflow-x: auto;
+  padding: 6px;
+}
+
+code {
+  color: #a8fff6;
+  font-size: 15px;
+}
+
+/* =====================================================
+   ÓRBITA DECORATIVA
+===================================================== */
+
+.orbit-box {
+  position: relative;
+  height: 240px;
+  margin-top: 24px;
+
+  background:
+    radial-gradient(circle at center, rgba(52, 152, 255, 0.13), transparent 42%),
+    var(--bg-card);
+
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.orbit-box::before {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px dashed rgba(255, 255, 255, 0.22);
+  border-radius: 50%;
+}
+
+.planet {
+  position: absolute;
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  left: calc(50% - 38px);
+  top: calc(50% - 38px);
+
+  background: radial-gradient(circle at 30% 30%, #fff0a3, #ffb703 45%, #f97316);
+  box-shadow: 0 0 45px rgba(255, 183, 3, 0.55);
+}
+
+.satellite {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  left: calc(50% - 11px);
+  top: calc(50% - 11px);
+
+  background: var(--blue);
+  box-shadow: 0 0 25px rgba(52, 152, 255, 0.75);
+
+  animation: orbit 5s linear infinite;
+}
+
+@keyframes orbit {
+  from {
+    transform: rotate(0deg) translateX(125px) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translateX(125px) rotate(-360deg);
+  }
+}
+
+/* =====================================================
+   ESTADÍSTICAS
+===================================================== */
+
+.stats {
+  width: min(100%, var(--max-width));
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+
+  padding: 0 7% 80px;
+}
+
+.stats article {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.09), rgba(255,255,255,0.04));
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+
+  text-align: center;
+  padding: 22px;
+
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18);
+  transition: 0.25s ease;
+}
+
+.stats article:hover {
+  transform: translateY(-5px);
+  border-color: rgba(40, 224, 211, 0.45);
+}
+
+.stats strong {
+  display: block;
+  font-size: 32px;
+  color: var(--cyan);
+}
+
+.stats span {
+  color: var(--muted);
+}
+
+/* =====================================================
+   SECCIONES GENERALES
+===================================================== */
+
+.section {
+  width: min(100%, var(--max-width));
+  margin: 0 auto;
+  padding: 75px 7%;
+}
+
+.section h2 {
+  font-size: clamp(32px, 5vw, 48px);
+  line-height: 1;
+  letter-spacing: -1px;
+  margin-bottom: 16px;
+}
+
+.section-intro {
+  color: var(--muted);
+  max-width: 940px;
+  margin-bottom: 38px;
+}
+
+/* =====================================================
+   TARJETAS DE TEMAS
+===================================================== */
+
+.week-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.week-card {
+  position: relative;
+  overflow: hidden;
+
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.09), rgba(255,255,255,0.045));
+
+  border-radius: var(--radius-lg);
+  padding: 26px;
+  border: 1px solid var(--border);
+
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.16);
+  transition: 0.25s ease;
+}
+
+.week-card::after {
+  content: "";
+  position: absolute;
+  inset: auto -40px -60px auto;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background: rgba(40, 224, 211, 0.10);
+  filter: blur(25px);
+  pointer-events: none;
+}
+
+.week-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(40, 224, 211, 0.38);
+  box-shadow: var(--shadow);
+}
+
+.week-card h3 {
+  margin-bottom: 8px;
+  font-size: 22px;
+}
+
+.week-card h4 {
+  color: var(--muted);
+  margin-bottom: 17px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.week-card p {
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.week-card strong {
+  color: var(--text);
+}
+
+.formula {
+  margin: 22px 0;
+  padding: 16px;
+
+  text-align: center;
+  border-radius: var(--radius-md);
+
+  font-size: clamp(20px, 3vw, 26px);
+  font-family: Georgia, "Times New Roman", serif;
+
+  background:
+    linear-gradient(135deg, rgba(40,224,211,0.13), rgba(166,108,255,0.12));
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #eaffff;
+}
+
+body.light .formula {
+  color: #102033;
+}
+
+/* Bordes de colores */
+.purple { border-color: rgba(166,108,255,.52); }
+.blue { border-color: rgba(52,152,255,.52); }
+.orange { border-color: rgba(255,157,61,.52); }
+.green { border-color: rgba(110,230,110,.52); }
+.pink { border-color: rgba(255,102,196,.52); }
+
+.purple h3 { color: var(--purple); }
+.blue h3 { color: var(--blue); }
+.orange h3 { color: var(--orange); }
+.green h3 { color: var(--green); }
+.pink h3 { color: var(--pink); }
+
+/* =====================================================
+   SIMULADORES
+===================================================== */
+
+.sim-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.sim-card {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.09), rgba(255,255,255,0.045));
+
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+
+  padding: 24px;
+
+  box-shadow: 0 14px 55px rgba(0, 0, 0, 0.18);
+  transition: 0.25s ease;
+}
+
+.sim-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(40, 224, 211, 0.35);
+}
+
+.sim-card h3 {
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+
+.sim-card canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.12);
+
+  background:
+    radial-gradient(circle at top left, rgba(52,152,255,0.10), transparent 35%),
+    #07111f;
+
+  margin-bottom: 16px;
+}
+
+.sim-card label {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.sim-card label span {
+  color: var(--text);
+  font-weight: 800;
+}
+
+/* Estilo para sliders */
+.sim-card input[type="range"] {
+  width: 100%;
+  accent-color: var(--cyan);
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 16px;
+  padding: 13px 15px;
+
+  border-radius: 14px;
+
+  background: rgba(40, 224, 211, 0.12);
+  border: 1px solid rgba(40, 224, 211, 0.18);
+
+  color: var(--cyan);
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.wide {
+  grid-column: 1 / -1;
+}
+
+.controls-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+/* =====================================================
+   APLICACIONES Y CONCLUSIÓN
+===================================================== */
+
+#aplicaciones .week-card {
+  min-height: 180px;
+}
+
+.conclusion {
+  width: 100%;
+  max-width: none;
+
+  margin-top: 30px;
+
+  background:
+    linear-gradient(135deg, rgba(40,224,211,.12), rgba(166,108,255,.12));
+}
+
+.conclusion h2,
+.conclusion p {
+  width: min(100%, var(--max-width));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.conclusion p {
+  color: var(--muted);
+  font-size: 18px;
+  max-width: 1100px;
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+  padding: 32px 7%;
+
+  border-top: 1px solid var(--border);
+
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+
+  color: var(--muted);
+  background: rgba(0, 0, 0, 0.12);
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1050px) {
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .hero-visual {
+    max-width: 720px;
+  }
+
+  .controls-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .week-grid,
+  .sim-grid,
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    align-items: flex-start;
+    gap: 16px;
+    flex-direction: column;
+  }
+
+  .nav-links {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+}
+
+@media (max-width: 620px) {
+  .hero,
+  .section,
+  .stats {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .hero h1 {
+    letter-spacing: -1px;
+  }
+
+  .controls-row {
+    grid-template-columns: 1fr;
+  }
+
+  .sim-card,
+  .week-card {
+    padding: 20px;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+}
