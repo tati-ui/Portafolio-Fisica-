@@ -767,6 +767,44 @@ footer {
     padding-bottom: 4px;
   }
 }
+/* =====================================================
+   COLORES DE LOS TEMAS NUEVOS DEL AVANCE 2
+===================================================== */
+
+:root {
+  --yellow: #ffd166;
+  --space-cyan: #52f7ff;
+}
+
+/* Semana 6: momento angular y torque */
+
+.yellow {
+  border-color: rgba(255, 209, 102, 0.55);
+}
+
+.yellow h3 {
+  color: var(--yellow);
+}
+
+/* Semana 8: satélites y exploración espacial */
+
+.cyan {
+  border-color: rgba(82, 247, 255, 0.55);
+}
+
+.cyan h3 {
+  color: var(--space-cyan);
+}
+
+/* Evita que la barra superior cubra el simulador
+   al desplazarse desde los botones */
+
+#momentoAngular,
+#torque,
+#satelite,
+#escape {
+  scroll-margin-top: 115px;
+}
 
 @media (max-width: 620px) {
   .hero,

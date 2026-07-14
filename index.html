@@ -1,63 +1,126 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- Configuración básica del documento -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- =====================================================
+       CONFIGURACIÓN GENERAL
+  ====================================================== -->
 
-  <title>Portafolio de Física I Aplicada al Software</title>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Portafolio de evidencias de Física I aplicada al desarrollo de software. Avance 2."
+  >
+
+  <title>
+    Portafolio de Física I Aplicada al Software — Avance 2
+  </title>
 
   <!-- Conexión con el archivo CSS -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-  <!-- =========================
+
+  <!-- =====================================================
        BARRA DE NAVEGACIÓN
-  ========================== -->
+  ====================================================== -->
+
   <header class="navbar">
+
     <div class="brand">
+
       <span class="brand-icon">⚛</span>
 
       <div>
         <strong>Física I</strong>
         <small>Aplicada al Software</small>
       </div>
+
     </div>
 
     <nav class="nav-links">
+
       <a href="#inicio">Inicio</a>
+
       <a href="#temas">Temas</a>
+
       <a href="#simuladores">Simuladores</a>
+
       <a href="#aplicaciones">Aplicaciones</a>
+
       <a href="#conclusion">Conclusión</a>
-      <button id="themeBtn" class="theme-btn" type="button">☀️</button>
+
+      <!-- Botón para cambiar entre modo oscuro y claro -->
+      <button
+        id="themeBtn"
+        class="theme-btn"
+        type="button"
+        aria-label="Cambiar tema"
+      >
+        ☀️
+      </button>
+
     </nav>
+
   </header>
 
-  <main>
-    <!-- =========================
-         INICIO
-    ========================== -->
-    <section id="inicio" class="hero">
-      <div class="hero-text">
-        <p class="label">Portafolio de evidencias — Avance 1</p>
 
-        <h1>Física aplicada al desarrollo de software</h1>
+  <!-- =====================================================
+       CONTENIDO PRINCIPAL
+  ====================================================== -->
+
+  <main>
+
+    <!-- =====================================================
+         SECCIÓN DE INICIO
+    ====================================================== -->
+
+    <section id="inicio" class="hero">
+
+      <div class="hero-text">
+
+        <p class="label">
+          Portafolio de evidencias — Avance 2
+        </p>
+
+        <h1>
+          Física aplicada al desarrollo de software
+        </h1>
 
         <p>
-          Este sitio web documenta cómo los temas de Física I se aplican en videojuegos,
-          simuladores, robótica, animación, realidad virtual, propulsión y sistemas interactivos.
+          Este sitio web documenta cómo los temas de Física I se
+          aplican en videojuegos, simuladores, robótica, animación,
+          realidad virtual, sistemas orbitales, satélites artificiales
+          y exploración espacial.
         </p>
 
         <div class="hero-buttons">
-          <a class="btn primary" href="#temas">Ver temas</a>
-          <a class="btn secondary" href="#simuladores">Probar simuladores</a>
+
+          <a class="btn primary" href="#temas">
+            Ver temas
+          </a>
+
+          <a class="btn secondary" href="#simuladores">
+            Probar simuladores
+          </a>
+
         </div>
+
       </div>
 
+
+      <!-- Elementos visuales de la portada -->
+
       <div class="hero-visual">
+
         <div class="code-card">
+
           <div class="code-dots">
             <span></span>
             <span></span>
@@ -69,56 +132,80 @@
   objeto.posicion += objeto.velocidad * dt;
   renderizar(objeto);
 }</code></pre>
+
         </div>
+
+
+        <!-- Órbita decorativa -->
 
         <div class="orbit-box">
+
           <div class="planet"></div>
+
           <div class="satellite"></div>
+
         </div>
+
       </div>
+
     </section>
 
-    <!-- =========================
-         ESTADÍSTICAS
-    ========================== -->
+
+    <!-- =====================================================
+         ESTADÍSTICAS DEL PORTAFOLIO
+    ====================================================== -->
+
     <section class="stats">
+
       <article>
-        <strong>8</strong>
-        <span>Temas exactos</span>
+        <strong>12</strong>
+        <span>Temas acumulados</span>
       </article>
 
       <article>
-        <strong>5+</strong>
+        <strong>11</strong>
         <span>Simuladores</span>
       </article>
 
       <article>
-        <strong>20+</strong>
-        <span>Aplicaciones reales</span>
+        <strong>4</strong>
+        <span>Módulos físicos</span>
       </article>
 
       <article>
         <strong>100%</strong>
-        <span>Enfoque interactivo</span>
+        <span>Interactivo</span>
       </article>
+
     </section>
 
-    <!-- =========================
-         TEMAS DEL AVANCE 1
-    ========================== -->
+
+    <!-- =====================================================
+         TEMAS DEL AVANCE 2
+    ====================================================== -->
+
     <section id="temas" class="section">
-      <h2>Temas del Avance 1</h2>
+
+      <h2>Temas del Avance 2</h2>
 
       <p class="section-intro">
-        Cada entrada incluye un caso concreto de Ingeniería del Software, un concepto físico,
-        una ecuación explícita, una justificación y un elemento de apoyo interactivo.
+        Este avance acumula el contenido de las semanas 1 a 8.
+        Cada entrada incluye un caso concreto de Ingeniería del
+        Software, el concepto físico aplicado, una ecuación explícita,
+        una justificación y un elemento de apoyo interactivo.
       </p>
+
 
       <div class="week-grid">
 
-        <!-- TEMA 1 -->
+        <!-- =================================================
+             TEMA 1
+        ================================================== -->
+
         <article class="week-card blue">
+
           <h3>1. Movimiento en 3 dimensiones</h3>
+
           <h4>Semana 2</h4>
 
           <p>
@@ -128,7 +215,8 @@
 
           <p>
             <strong>Concepto físico aplicado:</strong>
-            la posición se representa con componentes en los ejes x, y y z.
+            la posición se representa mediante componentes en los
+            ejes x, y y z.
           </p>
 
           <div class="formula">
@@ -137,24 +225,35 @@
 
           <p>
             <strong>Justificación:</strong>
-            un dron necesita calcular su posición y velocidad en tres dimensiones para estabilizarse,
-            navegar y evitar obstáculos. Usar física permite crear movimiento realista en lugar de
-            mover el objeto con coordenadas fijas.
+            un dron necesita calcular su posición y velocidad en
+            tres dimensiones para estabilizarse, navegar y evitar
+            obstáculos. El modelo físico produce movimiento continuo
+            y adaptable, en lugar de usar coordenadas fijas.
           </p>
 
           <p>
             <strong>Elemento de apoyo:</strong>
-            visualización conceptual de movimiento espacial.
+            visualización animada de una trayectoria tridimensional.
           </p>
 
-          <button onclick="scrollToSection('movimiento3d')" type="button">
+          <button
+            onclick="scrollToSection('movimiento3d')"
+            type="button"
+          >
             Ver apoyo 3D
           </button>
+
         </article>
 
-        <!-- TEMA 2 -->
+
+        <!-- =================================================
+             TEMA 2
+        ================================================== -->
+
         <article class="week-card purple">
+
           <h3>2. Movimiento Circular Uniforme</h3>
+
           <h4>Semana 2</h4>
 
           <p>
@@ -164,7 +263,8 @@
 
           <p>
             <strong>Concepto físico aplicado:</strong>
-            un objeto se mueve con rapidez constante, pero su velocidad cambia de dirección.
+            un objeto se mueve con rapidez constante, pero su
+            velocidad cambia continuamente de dirección.
           </p>
 
           <div class="formula">
@@ -173,23 +273,34 @@
 
           <p>
             <strong>Justificación:</strong>
-            permite calcular trayectorias circulares estables, como satélites, ruedas, engranajes
-            o cámaras que orbitan alrededor de un personaje.
+            permite calcular trayectorias circulares estables,
+            como satélites, ruedas, engranajes y cámaras que orbitan
+            alrededor de un personaje.
           </p>
 
           <p>
             <strong>Elemento de apoyo:</strong>
-            animación orbital del encabezado y simulador de fuerza centrípeta.
+            animación orbital y simulador de fuerza centrípeta.
           </p>
 
-          <button onclick="scrollToSection('centripeta')" type="button">
+          <button
+            onclick="scrollToSection('centripeta')"
+            type="button"
+          >
             Ver movimiento circular
           </button>
+
         </article>
 
-        <!-- TEMA 3 -->
+
+        <!-- =================================================
+             TEMA 3
+        ================================================== -->
+
         <article class="week-card orange">
+
           <h3>3. Fuerza Centrípeta</h3>
+
           <h4>Semana 3</h4>
 
           <p>
@@ -199,7 +310,8 @@
 
           <p>
             <strong>Concepto físico aplicado:</strong>
-            fuerza neta dirigida hacia el centro de una trayectoria circular.
+            fuerza neta dirigida hacia el centro de una trayectoria
+            circular.
           </p>
 
           <div class="formula">
@@ -208,23 +320,34 @@
 
           <p>
             <strong>Justificación:</strong>
-            esta fuerza permite mantener un objeto siguiendo una curva. En software, ayuda a
-            calcular movimientos realistas en curvas, vueltas, órbitas y simuladores de conducción.
+            esta fuerza permite mantener un objeto siguiendo una
+            curva. En software se utiliza para calcular movimientos
+            realistas en órbitas, giros y simuladores de conducción.
           </p>
 
           <p>
             <strong>Elemento de apoyo:</strong>
-            simulador con radio, velocidad y fuerza centrípeta.
+            simulador con masa, velocidad y radio.
           </p>
 
-          <button onclick="scrollToSection('centripeta')" type="button">
+          <button
+            onclick="scrollToSection('centripeta')"
+            type="button"
+          >
             Probar fuerza centrípeta
           </button>
+
         </article>
 
-        <!-- TEMA 4 -->
+
+        <!-- =================================================
+             TEMA 4
+        ================================================== -->
+
         <article class="week-card orange">
+
           <h3>4. Fuerza de Fricción</h3>
+
           <h4>Semana 3</h4>
 
           <p>
@@ -234,7 +357,8 @@
 
           <p>
             <strong>Concepto físico aplicado:</strong>
-            la fricción se opone al movimiento relativo entre superficies.
+            la fricción se opone al movimiento relativo entre dos
+            superficies.
           </p>
 
           <div class="formula">
@@ -243,8 +367,9 @@
 
           <p>
             <strong>Justificación:</strong>
-            permite simular agarre de llantas, frenado, derrapes y diferencias entre superficies
-            como asfalto seco, barro o pista mojada.
+            permite simular el agarre de las llantas, el frenado,
+            los derrapes y las diferencias entre superficies como
+            asfalto seco, barro o pista mojada.
           </p>
 
           <p>
@@ -252,19 +377,30 @@
             simulador de fuerza de fricción.
           </p>
 
-          <button onclick="scrollToSection('friccion')" type="button">
+          <button
+            onclick="scrollToSection('friccion')"
+            type="button"
+          >
             Probar fricción
           </button>
+
         </article>
 
-        <!-- TEMA 5 -->
+
+        <!-- =================================================
+             TEMA 5
+        ================================================== -->
+
         <article class="week-card green">
+
           <h3>5. Trabajo</h3>
+
           <h4>Semana 4</h4>
 
           <p>
             <strong>Caso específico:</strong>
-            brazo robótico industrial que mueve una caja en una línea de producción.
+            brazo robótico industrial que mueve una caja en una
+            línea de producción.
           </p>
 
           <p>
@@ -278,8 +414,9 @@
 
           <p>
             <strong>Justificación:</strong>
-            calcular trabajo permite estimar la energía requerida por un actuador o motor para
-            mover objetos dentro de una simulación industrial.
+            calcular el trabajo permite estimar la energía requerida
+            por un actuador o motor para mover objetos dentro de una
+            simulación industrial.
           </p>
 
           <p>
@@ -287,24 +424,36 @@
             simulador de trabajo mecánico.
           </p>
 
-          <button onclick="scrollToSection('trabajo')" type="button">
+          <button
+            onclick="scrollToSection('trabajo')"
+            type="button"
+          >
             Probar trabajo
           </button>
+
         </article>
 
-        <!-- TEMA 6 -->
+
+        <!-- =================================================
+             TEMA 6
+        ================================================== -->
+
         <article class="week-card green">
+
           <h3>6. Conservación de la Energía</h3>
+
           <h4>Semana 4</h4>
 
           <p>
             <strong>Caso específico:</strong>
-            simulación de una montaña rusa en un videojuego o entorno VR.
+            simulación de una montaña rusa en un videojuego o
+            entorno de realidad virtual.
           </p>
 
           <p>
             <strong>Concepto físico aplicado:</strong>
-            la energía mecánica se conserva si no hay fuerzas no conservativas.
+            la energía mecánica se conserva cuando no actúan
+            fuerzas no conservativas.
           </p>
 
           <div class="formula">
@@ -313,8 +462,9 @@
 
           <p>
             <strong>Justificación:</strong>
-            permite transformar energía potencial en energía cinética, haciendo que la velocidad
-            aumente en bajadas y disminuya en subidas de forma realista.
+            permite transformar energía potencial en energía
+            cinética, haciendo que la velocidad aumente en las
+            bajadas y disminuya en las subidas.
           </p>
 
           <p>
@@ -322,14 +472,24 @@
             simulador de energía cinética.
           </p>
 
-          <button onclick="scrollToSection('energia')" type="button">
+          <button
+            onclick="scrollToSection('energia')"
+            type="button"
+          >
             Probar energía
           </button>
+
         </article>
 
-        <!-- TEMA 7 -->
+
+        <!-- =================================================
+             TEMA 7
+        ================================================== -->
+
         <article class="week-card pink">
+
           <h3>7. Impulso</h3>
+
           <h4>Semana 5</h4>
 
           <p>
@@ -339,7 +499,8 @@
 
           <p>
             <strong>Concepto físico aplicado:</strong>
-            el impulso representa el cambio en el momento lineal durante un intervalo de tiempo.
+            el impulso representa el cambio del momento lineal
+            durante un intervalo de tiempo.
           </p>
 
           <div class="formula">
@@ -348,8 +509,9 @@
 
           <p>
             <strong>Justificación:</strong>
-            permite calcular cómo una fuerza aplicada durante cierto tiempo cambia la velocidad
-            de un objeto, como un cohete, una pelota o un vehículo después de un impacto.
+            permite calcular cómo una fuerza aplicada durante cierto
+            tiempo cambia la velocidad de un objeto, como un cohete,
+            una pelota o un vehículo.
           </p>
 
           <p>
@@ -357,14 +519,24 @@
             simulador de impulso.
           </p>
 
-          <button onclick="scrollToSection('impulso')" type="button">
+          <button
+            onclick="scrollToSection('impulso')"
+            type="button"
+          >
             Probar impulso
           </button>
+
         </article>
 
-        <!-- TEMA 8 -->
+
+        <!-- =================================================
+             TEMA 8
+        ================================================== -->
+
         <article class="week-card pink">
+
           <h3>8. Colisiones Inelásticas</h3>
+
           <h4>Semana 5</h4>
 
           <p>
@@ -374,7 +546,8 @@
 
           <p>
             <strong>Concepto físico aplicado:</strong>
-            en una colisión inelástica se conserva el momento lineal, pero no la energía cinética.
+            en una colisión inelástica se conserva el momento lineal,
+            pero no la energía cinética.
           </p>
 
           <div class="formula">
@@ -383,8 +556,9 @@
 
           <p>
             <strong>Justificación:</strong>
-            permite simular impactos donde los cuerpos quedan unidos o se deforman,
-            generando resultados más realistas que una simple animación de choque.
+            permite simular impactos en los que los cuerpos quedan
+            unidos o se deforman, produciendo resultados más realistas
+            que una animación fija.
           </p>
 
           <p>
@@ -392,234 +566,940 @@
             simulador de colisión inelástica.
           </p>
 
-          <button onclick="scrollToSection('momento')" type="button">
+          <button
+            onclick="scrollToSection('momento')"
+            type="button"
+          >
             Probar colisión
           </button>
+
+        </article>
+
+
+        <!-- =================================================
+             TEMA 9
+        ================================================== -->
+
+        <article class="week-card yellow">
+
+          <h3>9. Conservación del Momento Angular</h3>
+
+          <h4>Semana 6</h4>
+
+          <p>
+            <strong>Caso específico:</strong>
+            control de orientación de un satélite mediante ruedas
+            de reacción.
+          </p>
+
+          <p>
+            <strong>Concepto físico aplicado:</strong>
+            cuando el torque externo neto es cero, el momento angular
+            total de un sistema permanece constante.
+          </p>
+
+          <div class="formula">
+            L = Iω &nbsp;&nbsp; y &nbsp;&nbsp;
+            L<sub>i</sub> = L<sub>f</sub>
+          </div>
+
+          <p>
+            <strong>Justificación:</strong>
+            un satélite puede modificar su orientación acelerando una
+            rueda interna. La rueda gira en una dirección y el cuerpo
+            del satélite gira en sentido contrario para conservar el
+            momento angular.
+          </p>
+
+          <p>
+            <strong>Elemento de apoyo:</strong>
+            simulador interactivo de conservación del momento angular.
+          </p>
+
+          <button
+            onclick="scrollToSection('momentoAngular')"
+            type="button"
+          >
+            Probar momento angular
+          </button>
+
+        </article>
+
+
+        <!-- =================================================
+             TEMA 10
+        ================================================== -->
+
+        <article class="week-card yellow">
+
+          <h3>10. Torque</h3>
+
+          <h4>Semana 6</h4>
+
+          <p>
+            <strong>Caso específico:</strong>
+            cálculo de la fuerza necesaria en un brazo robótico
+            industrial.
+          </p>
+
+          <p>
+            <strong>Concepto físico aplicado:</strong>
+            el torque mide la capacidad de una fuerza para producir
+            rotación alrededor de un eje.
+          </p>
+
+          <div class="formula">
+            τ = rF sen(θ)
+          </div>
+
+          <p>
+            <strong>Justificación:</strong>
+            el software de control debe calcular el torque según la
+            fuerza aplicada, la distancia al eje y el ángulo. Esto
+            evita aplicar una fuerza insuficiente o excesiva.
+          </p>
+
+          <p>
+            <strong>Elemento de apoyo:</strong>
+            simulador interactivo de torque.
+          </p>
+
+          <button
+            onclick="scrollToSection('torque')"
+            type="button"
+          >
+            Probar torque
+          </button>
+
+        </article>
+
+
+        <!-- =================================================
+             TEMA 11
+        ================================================== -->
+
+        <article class="week-card cyan">
+
+          <h3>11. Satélites Artificiales</h3>
+
+          <h4>Semana 8</h4>
+
+          <p>
+            <strong>Caso específico:</strong>
+            cálculo de la órbita de un satélite GPS alrededor de
+            la Tierra.
+          </p>
+
+          <p>
+            <strong>Concepto físico aplicado:</strong>
+            la gravedad proporciona la fuerza centrípeta necesaria
+            para mantener al satélite en órbita.
+          </p>
+
+          <div class="formula">
+            v = √(GM / r)
+          </div>
+
+          <p>
+            <strong>Justificación:</strong>
+            calcular la velocidad orbital permite mantener satélites
+            estables para servicios de navegación, comunicaciones,
+            meteorología e Internet.
+          </p>
+
+          <p>
+            <strong>Elemento de apoyo:</strong>
+            simulación animada de una órbita circular.
+          </p>
+
+          <button
+            onclick="scrollToSection('satelite')"
+            type="button"
+          >
+            Probar órbita
+          </button>
+
+        </article>
+
+
+        <!-- =================================================
+             TEMA 12
+        ================================================== -->
+
+        <article class="week-card cyan">
+
+          <h3>12. Análisis y Exploración Espacial</h3>
+
+          <h4>Semana 8</h4>
+
+          <p>
+            <strong>Caso específico:</strong>
+            simulación computacional para determinar si un cohete
+            alcanza la velocidad de escape de un planeta.
+          </p>
+
+          <p>
+            <strong>Concepto físico aplicado:</strong>
+            la velocidad de escape es la rapidez mínima necesaria
+            para abandonar un campo gravitacional sin propulsión
+            adicional.
+          </p>
+
+          <div class="formula">
+            v<sub>e</sub> = √(2GM / R)
+          </div>
+
+          <p>
+            <strong>Justificación:</strong>
+            las agencias espaciales utilizan simuladores para probar
+            velocidades, trayectorias y condiciones iniciales antes de
+            realizar una misión real, reduciendo costos y riesgos.
+          </p>
+
+          <p>
+            <strong>Elemento de apoyo:</strong>
+            simulador de velocidad de escape.
+          </p>
+
+          <button
+            onclick="scrollToSection('escape')"
+            type="button"
+          >
+            Probar velocidad de escape
+          </button>
+
         </article>
 
       </div>
+
     </section>
 
-    <!-- =========================
+
+    <!-- =====================================================
          SIMULADORES INTERACTIVOS
-    ========================== -->
+    ====================================================== -->
+
     <section id="simuladores" class="section">
+
       <h2>Simuladores interactivos</h2>
 
       <p class="section-intro">
-        Los siguientes módulos permiten modificar parámetros y observar cómo cambia el resultado físico.
+        Los siguientes módulos permiten modificar parámetros y
+        observar cómo cambian las magnitudes físicas y el movimiento
+        de cada sistema.
       </p>
+
 
       <div class="sim-grid">
 
-        <!-- APOYO MOVIMIENTO 3D -->
+        <!-- =================================================
+             MOVIMIENTO EN 3D
+        ================================================== -->
+
         <article id="movimiento3d" class="sim-card">
+
           <h3>Movimiento en 3 dimensiones</h3>
-          <canvas id="threeDCanvas" width="420" height="220"></canvas>
+
+          <canvas
+            id="threeDCanvas"
+            width="420"
+            height="220"
+          ></canvas>
 
           <p class="result">
-            Un objeto en 3D se ubica mediante coordenadas x, y, z. Este tipo de modelo es usado
-            en drones, videojuegos 3D, realidad virtual y simuladores.
+            Un objeto en 3D se ubica mediante coordenadas x, y, z.
+            Este tipo de modelo se utiliza en drones, videojuegos 3D,
+            realidad virtual y simuladores.
           </p>
+
         </article>
 
-        <!-- FUERZA CENTRÍPETA -->
+
+        <!-- =================================================
+             FUERZA CENTRÍPETA
+        ================================================== -->
+
         <article id="centripeta" class="sim-card">
+
           <h3>Fuerza centrípeta</h3>
-          <canvas id="centripetalCanvas" width="420" height="220"></canvas>
+
+          <canvas
+            id="centripetalCanvas"
+            width="420"
+            height="220"
+          ></canvas>
 
           <label for="centripetalMassInput">
             Masa m:
             <span id="centripetalMassValue">2</span> kg
           </label>
-          <input id="centripetalMassInput" type="range" min="1" max="10" value="2">
+
+          <input
+            id="centripetalMassInput"
+            type="range"
+            min="1"
+            max="10"
+            value="2"
+          >
 
           <label for="centripetalSpeedInput">
             Velocidad v:
             <span id="centripetalSpeedValue">10</span> m/s
           </label>
-          <input id="centripetalSpeedInput" type="range" min="1" max="30" value="10">
+
+          <input
+            id="centripetalSpeedInput"
+            type="range"
+            min="1"
+            max="30"
+            value="10"
+          >
 
           <label for="centripetalRadiusInput">
             Radio r:
             <span id="centripetalRadiusValue">5</span> m
           </label>
-          <input id="centripetalRadiusInput" type="range" min="1" max="20" value="5">
+
+          <input
+            id="centripetalRadiusInput"
+            type="range"
+            min="1"
+            max="20"
+            value="5"
+          >
 
           <p id="centripetalResult" class="result"></p>
+
         </article>
 
-        <!-- FRICCIÓN -->
+
+        <!-- =================================================
+             FRICCIÓN
+        ================================================== -->
+
         <article id="friccion" class="sim-card">
+
           <h3>Fuerza de fricción</h3>
-          <canvas id="frictionCanvas" width="420" height="190"></canvas>
+
+          <canvas
+            id="frictionCanvas"
+            width="420"
+            height="190"
+          ></canvas>
 
           <label for="muInput">
             Coeficiente μ:
             <span id="muValue">0.30</span>
           </label>
-          <input id="muInput" type="range" min="0" max="1" step="0.01" value="0.30">
+
+          <input
+            id="muInput"
+            type="range"
+            min="0"
+            max="1"
+            step="0.01"
+            value="0.30"
+          >
 
           <label for="normalInput">
-            Normal N:
+            Fuerza normal N:
             <span id="normalValue">100</span> N
           </label>
-          <input id="normalInput" type="range" min="10" max="300" value="100">
+
+          <input
+            id="normalInput"
+            type="range"
+            min="10"
+            max="300"
+            value="100"
+          >
 
           <p id="frictionResult" class="result"></p>
+
         </article>
 
-        <!-- TRABAJO -->
+
+        <!-- =================================================
+             TRABAJO
+        ================================================== -->
+
         <article id="trabajo" class="sim-card">
+
           <h3>Trabajo mecánico</h3>
-          <canvas id="workCanvas" width="420" height="190"></canvas>
+
+          <canvas
+            id="workCanvas"
+            width="420"
+            height="190"
+          ></canvas>
 
           <label for="workForceInput">
             Fuerza F:
             <span id="workForceValue">50</span> N
           </label>
-          <input id="workForceInput" type="range" min="1" max="200" value="50">
+
+          <input
+            id="workForceInput"
+            type="range"
+            min="1"
+            max="200"
+            value="50"
+          >
 
           <label for="distanceInput">
             Distancia d:
             <span id="distanceValue">10</span> m
           </label>
-          <input id="distanceInput" type="range" min="1" max="50" value="10">
+
+          <input
+            id="distanceInput"
+            type="range"
+            min="1"
+            max="50"
+            value="10"
+          >
 
           <label for="workAngleInput">
             Ángulo θ:
             <span id="workAngleValue">0</span>°
           </label>
-          <input id="workAngleInput" type="range" min="0" max="180" value="0">
+
+          <input
+            id="workAngleInput"
+            type="range"
+            min="0"
+            max="180"
+            value="0"
+          >
 
           <p id="workResult" class="result"></p>
+
         </article>
 
-        <!-- ENERGÍA -->
+
+        <!-- =================================================
+             ENERGÍA
+        ================================================== -->
+
         <article id="energia" class="sim-card">
+
           <h3>Energía cinética</h3>
 
-          <canvas id="energyCanvas" width="420" height="190"></canvas>
+          <canvas
+            id="energyCanvas"
+            width="420"
+            height="190"
+          ></canvas>
 
           <label for="energyMassInput">
             Masa m:
             <span id="energyMassValue">2</span> kg
           </label>
-          <input id="energyMassInput" type="range" min="1" max="20" value="2" />
+
+          <input
+            id="energyMassInput"
+            type="range"
+            min="1"
+            max="20"
+            value="2"
+          >
 
           <label for="energySpeedInput">
             Velocidad v:
             <span id="energySpeedValue">10</span> m/s
           </label>
-          <input id="energySpeedInput" type="range" min="1" max="40" value="10" />
+
+          <input
+            id="energySpeedInput"
+            type="range"
+            min="1"
+            max="40"
+            value="10"
+          >
 
           <p id="energyResult" class="result"></p>
+
         </article>
 
-        <!-- IMPULSO -->
+
+        <!-- =================================================
+             IMPULSO
+        ================================================== -->
+
         <article id="impulso" class="sim-card">
+
           <h3>Impulso</h3>
-          <canvas id="impulseCanvas" width="420" height="190"></canvas>
+
+          <canvas
+            id="impulseCanvas"
+            width="420"
+            height="190"
+          ></canvas>
 
           <label for="impulseForceInput">
             Fuerza F:
             <span id="impulseForceValue">40</span> N
           </label>
-          <input id="impulseForceInput" type="range" min="1" max="200" value="40">
+
+          <input
+            id="impulseForceInput"
+            type="range"
+            min="1"
+            max="200"
+            value="40"
+          >
 
           <label for="timeInput">
             Tiempo Δt:
             <span id="timeValue">0.5</span> s
           </label>
-          <input id="timeInput" type="range" min="0.1" max="5" step="0.1" value="0.5">
+
+          <input
+            id="timeInput"
+            type="range"
+            min="0.1"
+            max="5"
+            step="0.1"
+            value="0.5"
+          >
 
           <p id="impulseResult" class="result"></p>
+
         </article>
 
-        <!-- COLISIÓN INELÁSTICA -->
+
+        <!-- =================================================
+             COLISIÓN INELÁSTICA
+        ================================================== -->
+
         <article id="momento" class="sim-card wide">
+
           <h3>Momento lineal y colisión inelástica 1D</h3>
 
-          <canvas id="momentumCanvas" width="870" height="230"></canvas>
+          <canvas
+            id="momentumCanvas"
+            width="870"
+            height="230"
+          ></canvas>
 
           <div class="controls-row">
-            <div>
-              <label for="m1Input">Masa 1: <span id="m1Value">2</span> kg</label>
-              <input id="m1Input" type="range" min="1" max="10" value="2" />
-            </div>
 
             <div>
-              <label for="u1Input">Velocidad 1: <span id="u1Value">8</span> m/s</label>
-              <input id="u1Input" type="range" min="0" max="20" value="8" />
+
+              <label for="m1Input">
+                Masa 1:
+                <span id="m1Value">2</span> kg
+              </label>
+
+              <input
+                id="m1Input"
+                type="range"
+                min="1"
+                max="10"
+                value="2"
+              >
+
             </div>
 
-            <div>
-              <label for="m2Input">Masa 2: <span id="m2Value">3</span> kg</label>
-              <input id="m2Input" type="range" min="1" max="10" value="3" />
-            </div>
 
             <div>
-              <label for="u2Input">Velocidad 2: <span id="u2Value">0</span> m/s</label>
-              <input id="u2Input" type="range" min="0" max="20" value="0" />
+
+              <label for="u1Input">
+                Velocidad 1:
+                <span id="u1Value">8</span> m/s
+              </label>
+
+              <input
+                id="u1Input"
+                type="range"
+                min="0"
+                max="20"
+                value="8"
+              >
+
             </div>
+
+
+            <div>
+
+              <label for="m2Input">
+                Masa 2:
+                <span id="m2Value">3</span> kg
+              </label>
+
+              <input
+                id="m2Input"
+                type="range"
+                min="1"
+                max="10"
+                value="3"
+              >
+
+            </div>
+
+
+            <div>
+
+              <label for="u2Input">
+                Velocidad 2:
+                <span id="u2Value">0</span> m/s
+              </label>
+
+              <input
+                id="u2Input"
+                type="range"
+                min="0"
+                max="20"
+                value="0"
+              >
+
+            </div>
+
           </div>
 
           <p id="momentumResult" class="result"></p>
+
         </article>
+
+
+        <!-- =================================================
+             MOMENTO ANGULAR
+        ================================================== -->
+
+        <article id="momentoAngular" class="sim-card">
+
+          <h3>Conservación del momento angular</h3>
+
+          <canvas
+            id="angularCanvas"
+            width="420"
+            height="220"
+          ></canvas>
+
+          <label for="angularInertiaInput">
+            Momento de inercia inicial I₁:
+            <span id="angularInertiaValue">4.0</span> kg·m²
+          </label>
+
+          <input
+            id="angularInertiaInput"
+            type="range"
+            min="1"
+            max="10"
+            step="0.5"
+            value="4"
+          >
+
+          <label for="angularSpeedInput">
+            Velocidad angular inicial ω₁:
+            <span id="angularSpeedValue">3.0</span> rad/s
+          </label>
+
+          <input
+            id="angularSpeedInput"
+            type="range"
+            min="1"
+            max="12"
+            step="0.5"
+            value="3"
+          >
+
+          <label for="finalInertiaInput">
+            Momento de inercia final I₂:
+            <span id="finalInertiaValue">2.0</span> kg·m²
+          </label>
+
+          <input
+            id="finalInertiaInput"
+            type="range"
+            min="1"
+            max="10"
+            step="0.5"
+            value="2"
+          >
+
+          <p id="angularResult" class="result"></p>
+
+        </article>
+
+
+        <!-- =================================================
+             TORQUE
+        ================================================== -->
+
+        <article id="torque" class="sim-card">
+
+          <h3>Torque o momento de una fuerza</h3>
+
+          <canvas
+            id="torqueCanvas"
+            width="420"
+            height="220"
+          ></canvas>
+
+          <label for="torqueForceInput">
+            Fuerza F:
+            <span id="torqueForceValue">50</span> N
+          </label>
+
+          <input
+            id="torqueForceInput"
+            type="range"
+            min="1"
+            max="200"
+            value="50"
+          >
+
+          <label for="torqueRadiusInput">
+            Distancia al eje r:
+            <span id="torqueRadiusValue">2.0</span> m
+          </label>
+
+          <input
+            id="torqueRadiusInput"
+            type="range"
+            min="0.5"
+            max="5"
+            step="0.1"
+            value="2"
+          >
+
+          <label for="torqueAngleInput">
+            Ángulo θ:
+            <span id="torqueAngleValue">90</span>°
+          </label>
+
+          <input
+            id="torqueAngleInput"
+            type="range"
+            min="0"
+            max="180"
+            value="90"
+          >
+
+          <p id="torqueResult" class="result"></p>
+
+        </article>
+
+
+        <!-- =================================================
+             SATÉLITE ARTIFICIAL
+        ================================================== -->
+
+        <article id="satelite" class="sim-card">
+
+          <h3>Satélite artificial en órbita</h3>
+
+          <canvas
+            id="satelliteCanvas"
+            width="420"
+            height="260"
+          ></canvas>
+
+          <label for="satelliteAltitudeInput">
+            Altura sobre la Tierra:
+            <span id="satelliteAltitudeValue">500</span> km
+          </label>
+
+          <input
+            id="satelliteAltitudeInput"
+            type="range"
+            min="200"
+            max="36000"
+            step="100"
+            value="500"
+          >
+
+          <p id="satelliteResult" class="result"></p>
+
+        </article>
+
+
+        <!-- =================================================
+             VELOCIDAD DE ESCAPE
+        ================================================== -->
+
+        <article id="escape" class="sim-card">
+
+          <h3>Exploración espacial: velocidad de escape</h3>
+
+          <canvas
+            id="escapeCanvas"
+            width="420"
+            height="260"
+          ></canvas>
+
+          <label for="planetMassInput">
+            Masa relativa del planeta:
+            <span id="planetMassValue">1.0</span> Tierras
+          </label>
+
+          <input
+            id="planetMassInput"
+            type="range"
+            min="0.1"
+            max="5"
+            step="0.1"
+            value="1"
+          >
+
+          <label for="planetRadiusInput">
+            Radio relativo del planeta:
+            <span id="planetRadiusValue">1.0</span> Tierras
+          </label>
+
+          <input
+            id="planetRadiusInput"
+            type="range"
+            min="0.3"
+            max="3"
+            step="0.1"
+            value="1"
+          >
+
+          <label for="rocketSpeedInput">
+            Velocidad inicial del cohete:
+            <span id="rocketSpeedValue">10.0</span> km/s
+          </label>
+
+          <input
+            id="rocketSpeedInput"
+            type="range"
+            min="1"
+            max="30"
+            step="0.5"
+            value="10"
+          >
+
+          <p id="escapeResult" class="result"></p>
+
+        </article>
+
       </div>
+
     </section>
 
-    <!-- =========================
+
+    <!-- =====================================================
          APLICACIONES REALES
-    ========================== -->
+    ====================================================== -->
+
     <section id="aplicaciones" class="section">
+
       <h2>Aplicaciones reales en software</h2>
 
+      <p class="section-intro">
+        Los conceptos estudiados permiten crear sistemas digitales
+        capaces de representar fenómenos físicos con mayor precisión.
+      </p>
+
+
       <div class="week-grid">
+
         <article class="week-card blue">
+
           <h3>Videojuegos</h3>
-          <p>Angry Birds, Rocket League, BeamNG Drive, Kerbal Space Program y Forza Horizon usan física para trayectorias, colisiones, fricción y movimiento circular.</p>
+
+          <p>
+            Angry Birds, Rocket League, BeamNG Drive, Kerbal Space
+            Program y Forza Horizon utilizan física para simular
+            trayectorias, colisiones, fricción, energía y órbitas.
+          </p>
+
         </article>
+
 
         <article class="week-card green">
+
           <h3>Robótica</h3>
-          <p>Drones autónomos y brazos industriales necesitan física para calcular posición, fuerza, trabajo y estabilidad.</p>
+
+          <p>
+            Drones autónomos y brazos industriales necesitan modelos
+            de posición, trabajo, fuerza, torque y estabilidad para
+            operar de forma segura.
+          </p>
+
         </article>
+
 
         <article class="week-card purple">
-          <h3>Realidad virtual</h3>
-          <p>Los simuladores VR usan movimiento, energía y fuerza centrípeta para crear experiencias inmersivas y físicamente coherentes.</p>
+
+          <h3>Satélites y telecomunicaciones</h3>
+
+          <p>
+            Los sistemas de GPS, meteorología e Internet satelital
+            utilizan cálculos de velocidad orbital, gravitación y
+            momento angular.
+          </p>
+
         </article>
+
 
         <article class="week-card pink">
-          <h3>Simulación científica</h3>
-          <p>Los motores físicos permiten estudiar choques, impulso, energía y trayectorias antes de construir prototipos reales.</p>
+
+          <h3>Exploración espacial</h3>
+
+          <p>
+            Las agencias espaciales utilizan simuladores para analizar
+            órbitas, velocidades de escape, trayectorias y condiciones
+            iniciales antes de ejecutar una misión.
+          </p>
+
         </article>
+
       </div>
+
     </section>
 
-    <!-- =========================
+
+    <!-- =====================================================
          CONCLUSIÓN
-    ========================== -->
+    ====================================================== -->
+
     <section id="conclusion" class="section conclusion">
+
       <h2>Conclusión</h2>
 
       <p>
-        Durante la elaboración de este portafolio comprendí que los conceptos estudiados en Física I
-        tienen aplicaciones directas en el desarrollo de software moderno. Desde la simulación de
-        trayectorias y colisiones hasta el control de robots, videojuegos y sistemas de realidad virtual,
-        la física proporciona modelos matemáticos necesarios para construir experiencias digitales
-        realistas, interactivas y eficientes.
+        Durante la elaboración de este portafolio comprendí que los
+        conceptos de Física I tienen aplicaciones directas en el
+        desarrollo de software moderno. La cinemática permite modelar
+        posiciones y trayectorias; la dinámica permite representar
+        fuerzas y rotaciones; las leyes de conservación permiten
+        analizar energía, momento lineal y momento angular; y la
+        gravitación permite simular satélites y misiones espaciales.
+        Estos modelos matemáticos permiten construir aplicaciones,
+        videojuegos, sistemas robóticos y simuladores más realistas,
+        precisos e interactivos.
       </p>
+
     </section>
+
   </main>
 
+
+  <!-- =====================================================
+       PIE DE PÁGINA
+  ====================================================== -->
+
   <footer>
-    <p>Portafolio de Física I — Alumna Tatiana Solis</p>
-    <p>Universidad CENFOTEC · FUN-18</p>
+
+    <p>
+      Portafolio de Física I — Alumna Tatiana Solís
+    </p>
+
+    <p>
+      Universidad CENFOTEC · FUN-18 · Avance 2
+    </p>
+
   </footer>
 
-  <!-- Conexión con el archivo JavaScript -->
+
+  <!-- =====================================================
+       CONEXIÓN CON JAVASCRIPT
+  ====================================================== -->
+
   <script src="javascrip/script.js"></script>
+
 </body>
 </html>
